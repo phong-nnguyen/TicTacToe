@@ -1,5 +1,7 @@
+package test.src;
+
 import java.util.Scanner;
-public class Main {
+public class test {
 
     public static int userInputs(){
         Scanner Input = new Scanner(System.in);
@@ -120,7 +122,7 @@ public class Main {
             } else if (x == 2){
                 if(b == 'x'){
                     return -10;
-                } else if (a == 'o'){
+                } else if (b == 'o'){
                     return 10;
                 }
             }
@@ -218,8 +220,10 @@ public class Main {
                     }
                 if (winCon(board) == -10){
                     System.out.println("Player X has won");
+                    System.exit(0);
                 } else if(winCon(board) == 10){
                     System.out.println("Player O has won");
+                    System.exit(0);
                 }
             }
             System.out.println("Game has finished");
